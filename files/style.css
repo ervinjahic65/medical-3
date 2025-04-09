@@ -4188,7 +4188,7 @@ body{
 }
 
 .faq-item {
-    background-color: #fff;
+    background-color: #1ad1c2;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -4201,16 +4201,33 @@ body{
 }
 
 .faq-item details summary {
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
     cursor: pointer;
     margin-bottom: 10px;
-    padding: 5px 0;
+    padding: 12px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item details summary::after {
+    content: '▼';
+    font-size: 18px;
+    color: #fff; /* Change the color to match your theme */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item details[open] summary::after {
+    transform: rotate(180deg);
+    color: #fff; /* Change color when open, or use your own color */
 }
 
 .faq-item details summary h3 {
 	font-size: 16px;
+	color: #FFF !important;
 }
 
 .faq-item details[open] summary {
@@ -4218,10 +4235,12 @@ body{
 }
 
 .faq-item .faq-content p {
-    font-size: 12px;
-    color: #555;
+    font-size: 14px;
+    color: #fff;
     margin-top: 10px;
     line-height: 1.6;
+	padding-top: 5px;
+	border-top: 1px solid #FFF;
 }
 
 @media (max-width: 768px) {
