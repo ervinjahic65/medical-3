@@ -4168,3 +4168,72 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+
+/*=========================
+	FAQ
+===========================*/
+
+/* FAQ Section Styling */
+.faq.section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.faq .section-title h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item details summary {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.faq-item details summary h3 {
+	font-size: 16px;
+}
+
+.faq-item details[open] summary {
+    color: #007bff;
+}
+
+.faq-item .faq-content p {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .faq .section-title h2 {
+        font-size: 30px;
+    }
+    
+    .faq-item {
+        padding: 15px;
+    }
+
+    .faq-item details summary {
+        font-size: 18px;
+    }
+}
